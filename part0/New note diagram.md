@@ -8,7 +8,7 @@ sequenceDiagram
     server-->>browser: redirects
     deactivate server
 
-Note right of browser: The browser sends new note to browser
+    Note right of browser: The browser sends new note to browser
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
     activate server
@@ -25,8 +25,7 @@ Note right of browser: The browser sends new note to browser
     server-->>browser: main.js
     deactivate server
 
-    Note right of browser: The browser starts executing the JavaScript code that fetches the JSON from the server
-x
+    Note right of browser: The browser starts executing the JavaScript code that fetches the JSON from the serverx
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/page-script.js
     activate server
     server-->>browser: page-script.js
